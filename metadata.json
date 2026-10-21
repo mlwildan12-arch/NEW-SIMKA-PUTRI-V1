@@ -1,0 +1,8 @@
+{
+  "name": "Remix Remix Remix  SIMKA.ID PUTRI - Sistem Monitoring Karakter \u0026 Akhlak Santri Putri",
+  "description": "Dashboard administrasi pembinaan akhlak dan karakter santri modern untuk Koordinator dan Kasie Pembinaan Pesantren.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}

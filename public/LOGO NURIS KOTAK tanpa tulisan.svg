@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="400" height="400" fill="none">
+  <!-- Orange geometric accents -->
+  <g fill="#EA8A28">
+    <!-- Top diamond dot 1 -->
+    <rect x="187" y="15" width="26" height="26" transform="rotate(45 200 28)" rx="2" />
+    <!-- Top diamond dot 2 -->
+    <rect x="182" y="55" width="36" height="36" transform="rotate(45 200 73)" rx="3" />
+    <!-- Center Chevron V -->
+    <path d="M 120 115 L 200 220 L 280 115 L 244 115 L 200 174 L 156 115 Z" />
+  </g>
+
+  <!-- Green Islamic Calligraphic Geometric Frame -->
+  <g fill="#0E8043">
+    <!-- Left Branch -->
+    <path d="M 16 195 L 75 136 L 140 201 L 108 233 L 75 200 L 48 227 L 140 319 L 200 259 L 168 227 L 200 195 L 232 227 L 200 259 L 200 384 L 16 200 Z" fill-rule="evenodd" />
+    <!-- Clean mirrored geometry -->
+    <!-- Main Left Wing -->
+    <path d="M 16 200 L 140 76 L 175 111 L 83 203 L 138 258 L 173 223 L 200 250 L 200 384 L 16 200 Z" />
+    <!-- Main Right Wing -->
+    <path d="M 384 200 L 260 76 L 225 111 L 317 203 L 262 258 L 227 223 L 200 250 L 200 384 L 384 200 Z" />
+    
+    <!-- Central Bottom V -->
+    <path d="M 200 384 L 70 254 L 105 219 L 200 314 L 295 219 L 330 254 Z" />
+    
+    <!-- Left Top Arm -->
+    <path d="M 60 156 L 140 76 L 170 106 L 118 158 L 148 188 L 118 218 L 60 160 Z" />
+    <!-- Right Top Arm -->
+    <path d="M 340 156 L 260 76 L 230 106 L 282 158 L 252 188 L 282 218 L 340 160 Z" />
+    
+    <!-- Dots inside -->
+    <rect x="235" y="225" width="28" height="28" transform="rotate(45 249 239)" rx="2" />
+    <rect x="137" y="225" width="28" height="28" transform="rotate(45 151 239)" rx="2" />
+  </g>
+</svg>

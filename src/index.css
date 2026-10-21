@@ -1,0 +1,161 @@
+@import "tailwindcss";
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@layer base {
+  :root {
+    --bg-app: #F7F9FC;
+    --bg-surface: #FFFFFF;
+    --bg-sidebar: #FFFFFF;
+    --bg-header: #FFFFFF;
+    --border-color: #E5E7EB;
+    --text-primary: #0F172A;
+    --text-secondary: #64748B;
+    --bg-input: #FFFFFF;
+    --primary-color: #059669;
+  }
+
+  .dark {
+    --bg-app: #07101F;
+    --bg-surface: #101C2F;
+    --bg-sidebar: #081221;
+    --bg-header: #081221;
+    --border-color: #1E3048;
+    --text-primary: #F8FAFC;
+    --text-secondary: #94A3B8;
+    --bg-input: #0B1628;
+    --primary-color: #10B981;
+  }
+
+  body {
+    background-color: var(--bg-app);
+    color: var(--text-primary);
+    font-family: 'Plus Jakarta Sans', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+    transition: background-color 0.2s ease, color 0.2s ease, border-color 0.2s ease;
+    overflow-x: hidden;
+    width: 100%;
+    max-width: 100%;
+  }
+
+  html {
+    overflow-x: hidden;
+    width: 100%;
+    max-width: 100%;
+  }
+
+  #root {
+    width: 100%;
+    max-width: 100%;
+    overflow-x: hidden;
+  }
+}
+
+/* Compact Responsive Typography & Mobile Scale (<= 430px) */
+@media screen and (max-width: 430px) {
+  html, body {
+    font-size: 13px;
+    line-height: 1.4;
+  }
+
+  /* Compact button styling on mobile */
+  button:not(.no-mobile-compact) {
+    font-size: 12px;
+  }
+
+  /* Compact input styling on mobile */
+  input, select, textarea {
+    font-size: 13px;
+  }
+}
+
+
+/* Custom sleek scrollbar for tables and sidebar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #CBD5E1;
+  border-radius: 9999px;
+}
+
+.dark ::-webkit-scrollbar-thumb {
+  background: #1E293B;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #94A3B8;
+}
+
+.dark ::-webkit-scrollbar-thumb:hover {
+  background: #334155;
+}
+
+/* Print Stylesheet for A4 Form Pembinaan */
+@media print {
+  @page {
+    size: A4 portrait;
+    margin: 8mm 10mm 8mm 10mm;
+  }
+
+  body {
+    background-color: #FFFFFF !important;
+    color: #000000 !important;
+    font-family: 'Times New Roman', Times, serif !important;
+    -webkit-print-color-adjust: exact !important;
+    print-color-adjust: exact !important;
+  }
+
+  /* Hide entire web app UI */
+  header, nav, aside, footer, .no-print, [role="dialog"] > div:first-child {
+    display: none !important;
+  }
+
+  /* Make modal container full print */
+  .fixed {
+    position: static !important;
+    background: none !important;
+    backdrop-filter: none !important;
+    padding: 0 !important;
+    margin: 0 !important;
+    overflow: visible !important;
+    display: block !important;
+  }
+
+  .form-pembinaan-a4-page {
+    display: flex !important;
+    visibility: visible !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    height: 100% !important;
+    min-height: 270mm !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    box-shadow: none !important;
+    border: none !important;
+    background-color: #FFFFFF !important;
+    color: #000000 !important;
+    page-break-inside: avoid;
+    break-inside: avoid;
+  }
+
+  .form-pembinaan-a4-page * {
+    visibility: visible !important;
+  }
+
+  table {
+    page-break-inside: auto;
+  }
+
+  tr {
+    page-break-inside: avoid;
+    page-break-after: auto;
+  }
+}
+
+

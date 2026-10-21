@@ -1,0 +1,95 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <defs>
+    <!-- Background Emerald Squircle Gradient -->
+    <linearGradient id="bg-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#00A878"/>
+      <stop offset="45%" stop-color="#008761"/>
+      <stop offset="100%" stop-color="#044734"/>
+    </linearGradient>
+
+    <!-- Main Dome Gradient -->
+    <linearGradient id="dome-grad" x1="50%" y1="0%" x2="50%" y2="100%">
+      <stop offset="0%" stop-color="#00E6A8"/>
+      <stop offset="100%" stop-color="#008761"/>
+    </linearGradient>
+
+    <!-- Base Building Gradient -->
+    <linearGradient id="base-grad" x1="50%" y1="0%" x2="50%" y2="100%">
+      <stop offset="0%" stop-color="#009E71"/>
+      <stop offset="100%" stop-color="#005A40"/>
+    </linearGradient>
+
+    <!-- Subtle inner border gradient -->
+    <linearGradient id="border-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#00FFBC" stop-opacity="0.45"/>
+      <stop offset="100%" stop-color="#005A40" stop-opacity="0.2"/>
+    </linearGradient>
+  </defs>
+
+  <!-- 1. Emerald Container with Rounded Corners (Squircle) -->
+  <rect x="0" y="0" width="512" height="512" rx="112" fill="url(#bg-grad)"/>
+  <rect x="4" y="4" width="504" height="504" rx="108" fill="none" stroke="url(#border-grad)" stroke-width="4"/>
+
+  <!-- 2. Crescent & Star at top - Gold #F4B942 -->
+  <path
+    d="M 256 42 C 269 42 280 47 288 55 C 275 58 266 69 266 82 C 266 95 275 106 288 109 C 280 117 269 122 256 122 C 234 122 216 104 216 82 C 216 60 234 42 256 42 Z"
+    fill="#F4B942"
+  />
+  <circle cx="285" cy="82" r="9.5" fill="#F4B942" />
+
+  <!-- 3. Center Main Dome -->
+  <path
+    d="M 256 120 C 200 120 160 168 160 232 L 352 232 C 352 168 312 120 256 120 Z"
+    fill="url(#dome-grad)"
+  />
+  <!-- Dome Inner Gold Accent Arch -->
+  <path
+    d="M 256 144 C 220 144 192 179 192 232 L 320 232 C 320 179 292 144 256 144 Z"
+    stroke="#F4B942"
+    stroke-width="12.5"
+    stroke-dasharray="19 19"
+    fill="none"
+  />
+
+  <!-- 4. Left Minaret -->
+  <!-- Gold spire & pinnacle -->
+  <path d="M 88 136 L 104 112 L 120 136 L 120 296 L 88 296 Z" fill="#F4B942" />
+  <!-- Lower minaret tower -->
+  <rect x="72" y="296" width="64" height="128" fill="#006C4E" stroke="#00B686" stroke-width="6"/>
+  <!-- Minaret arched window slit -->
+  <rect x="88" y="320" width="32" height="48" rx="8" fill="#042C20" />
+
+  <!-- 5. Right Minaret -->
+  <!-- Gold spire & pinnacle -->
+  <path d="M 392 136 L 408 112 L 424 136 L 424 296 L 392 296 Z" fill="#F4B942" />
+  <!-- Lower minaret tower -->
+  <rect x="376" y="296" width="64" height="128" fill="#006C4E" stroke="#00B686" stroke-width="6"/>
+  <!-- Minaret arched window slit -->
+  <rect x="392" y="320" width="32" height="48" rx="8" fill="#042C20" />
+
+  <!-- 6. Main Building Base -->
+  <rect x="136" y="232" width="240" height="192" fill="url(#base-grad)" stroke="#00B686" stroke-width="6"/>
+
+  <!-- 7. Central Gate / Mihrab Arch -->
+  <path
+    d="M 216 424 L 216 328 C 216 306 234 288 256 288 C 278 288 296 306 296 328 L 296 424 Z"
+    fill="#031F17"
+    stroke="#F4B942"
+    stroke-width="12"
+  />
+
+  <!-- 8. Side Arches -->
+  <!-- Left side window -->
+  <path
+    d="M 160 424 L 160 352 C 160 339 171 328 184 328 L 184 424 Z"
+    fill="#031F17"
+  />
+  <!-- Right side window -->
+  <path
+    d="M 328 424 L 328 328 C 341 328 352 339 352 352 L 352 424 Z"
+    fill="#031F17"
+  />
+
+  <!-- 9. Ground Base Line - Solid Gold #F4B942 -->
+  <path d="M 48 424 L 464 424" stroke="#F4B942" stroke-width="19" stroke-linecap="round" />
+</svg>

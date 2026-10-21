@@ -1,0 +1,83 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1080 360" width="1080" height="360" fill="none">
+  <defs>
+    <!-- Gradient for Orange/Gold TENGARAN and Chevron -->
+    <linearGradient id="nurisOrangeGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#E6731B" />
+      <stop offset="45%" stop-color="#EB8722" />
+      <stop offset="100%" stop-color="#F5B800" />
+    </linearGradient>
+    <linearGradient id="nurisGoldGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#FFD200" />
+      <stop offset="100%" stop-color="#F5B800" />
+    </linearGradient>
+  </defs>
+
+  <!-- LEFT: Emblem (Logo Mark) -->
+  <g transform="translate(10, 10)">
+    <!-- Top yellow diamond accent -->
+    <rect x="156" y="8" width="30" height="30" transform="rotate(45 171 23)" rx="3" fill="url(#nurisGoldGrad)" />
+
+    <!-- Center Orange/Gold V-Chevron -->
+    <path d="M 98 102 L 171 198 L 244 102 L 210 102 L 171 154 L 132 102 Z" fill="url(#nurisOrangeGrad)" />
+
+    <!-- Green Islamic Geometry -->
+    <g fill="#069B4C">
+      <!-- Main outer diagonal arms -->
+      <path d="M 8 171 L 118 61 L 150 93 L 68 175 L 118 225 L 150 193 L 171 214 L 171 334 L 8 171 Z" />
+      <path d="M 334 171 L 224 61 L 192 93 L 274 175 L 224 225 L 192 193 L 171 214 L 171 334 L 334 171 Z" />
+      
+      <!-- Inner lower V -->
+      <path d="M 171 334 L 58 221 L 88 191 L 171 274 L 254 191 L 284 221 Z" />
+      
+      <!-- Upper left geometric corner -->
+      <path d="M 48 131 L 118 61 L 144 87 L 98 133 L 124 159 L 98 185 L 48 135 Z" />
+      <!-- Upper right geometric corner -->
+      <path d="M 294 131 L 224 61 L 198 87 L 244 133 L 218 159 L 244 185 L 294 135 Z" />
+      
+      <!-- Center square dot -->
+      <rect x="156" y="194" width="28" height="28" transform="rotate(45 170 208)" rx="2" />
+    </g>
+  </g>
+
+  <!-- RIGHT: Typography (PESANTREN / NURUL ISLAM / TENGARAN) -->
+  <g transform="translate(375, 0)">
+    <!-- Line 1: PESANTREN -->
+    <text
+      x="0"
+      y="136"
+      fill="#069B4C"
+      font-family="system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Montserrat', 'Inter', Arial, sans-serif"
+      font-size="88"
+      font-weight="900"
+      letter-spacing="-0.5px"
+    >
+      PESANTREN
+    </text>
+
+    <!-- Line 2: NURUL ISLAM -->
+    <text
+      x="0"
+      y="238"
+      fill="#069B4C"
+      font-family="system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Montserrat', 'Inter', Arial, sans-serif"
+      font-size="88"
+      font-weight="900"
+      letter-spacing="-0.5px"
+    >
+      NURUL ISLAM
+    </text>
+
+    <!-- Line 3: TENGARAN (Orange to Gold gradient) -->
+    <text
+      x="0"
+      y="338"
+      fill="url(#nurisOrangeGrad)"
+      font-family="system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Montserrat', 'Inter', Arial, sans-serif"
+      font-size="88"
+      font-weight="900"
+      letter-spacing="-0.5px"
+    >
+      TENGARAN
+    </text>
+  </g>
+</svg>
